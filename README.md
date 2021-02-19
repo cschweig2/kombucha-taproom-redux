@@ -42,7 +42,13 @@ None.
     <td>1</td>
     <td>formVisibleReducer should return default state if no action type is recognized</td>
     <td>formVisibleReducer(false, { type: null })</td>
-    <td>(false)</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>formVisibleReducer should toggle form visibility state to true</td>
+    <td>formVisibleReducer(false, { type: 'TOGGLE_FORM' })</td>
+    <td>true</td>
   </tr>
 </table>
 
