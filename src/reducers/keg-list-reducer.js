@@ -4,6 +4,6 @@ export default (state = {}, action) => {
     case 'ADD_KEG':
       return state;
     default:
-      return !state;
+      return state;
   }
 };
