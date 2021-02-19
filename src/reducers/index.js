@@ -3,7 +3,7 @@ import kegListReducer from './keg-list-reducer';
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  formVisibleOnPage: true,
+  formVisibleOnPage: formVisibleReducer,
   masterKegList: kegListReducer
 });
 
