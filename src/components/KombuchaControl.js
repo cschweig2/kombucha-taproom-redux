@@ -68,37 +68,23 @@ class KombuchaControl extends React.Component {
     this.setState({ selectedKeg: null });
   }
 
+
   handleBuyPint = (kegToBuyFrom) => {
-    const selectedKeg = this.state.selectedKeg;
-    if (selectedKeg.pintsLeft > 1) {
-      // const newPintCount = Object.assign({}, selectedKeg, { pintsLeft: selectedKeg.pintsLeft - 1});
-      // const newMasterKegList = this.props.masterKegList[id];
-      // newMasterKegList.pintsLeft = newPintCount;
-      // // const newMasterKegList = this.state.masterKegList
-      // //   .filter(keg => keg.id !== this.state.selectedKeg.id)
-      // //   .concat(newPintCount);
-
-      const { dispatch } = this.props;
-      const { pintsLeft } = kegToBuyFrom;
-      const action = {
-        type: 'ADD_KEG',
-        pintsLeft: pintsLeft - 1
-      }
-      dispatch(action);
-
-      this.setState({
-        selectedKeg: null
-      });
-    } else if (selectedKeg.pintsLeft === 1) {
-      const newPintCount = Object.assign({}, selectedKeg, { pintsLeft: selectedKeg.pintsLeft = 'Out of Stock'});
-      const newMasterKegList = this.state.masterKegList
-        .filter(keg => keg.id !== this.state.selectedKeg.id)
-        .concat(newPintCount);
-      this.setState({
-        masterKegList: newMasterKegList,
-        selectedKeg: null
-      });
+    const { dispatch } = this.props;
+    const { name, brand, flavor, price, id, pintsLeft } = kegToBuyFrom;
+    const action = {
+      type: 'ADD_KEG',
+      pintsLeft: pintsLeft,
+      name: name,
+      brand: brand,
+      flavor: flavor,
+      price: price,
+      id: id
     }
+    dispatch(action);
+    this.setState({
+
+    });
   }
 
   handleClick = () => {
@@ -136,7 +122,7 @@ class KombuchaControl extends React.Component {
       keg={this.state.selectedKeg}
       onClickingDelete={this.handleKegDelete}
       onClickingEdit={this.handleEditClick}
-      onClickingBuy={this.handleBuyPint} />
+      onChangingKegPintsLeft={this.handleBuyPint} />
       buttonText='Return to Keg List';
     } else {
       currentVisibleState = <KegList
