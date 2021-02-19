@@ -92,6 +92,12 @@ None.
     <td>expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action))</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>10</td>
+    <td>TOGGLE_FORM action works for formVisibleReducer and rootReducer</td>
+    <td>expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action))</td>
+    <td>True</td>
+  </tr>
 </table>
 
 </details>
