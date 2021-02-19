@@ -77,14 +77,20 @@ None.
   <tr>
     <td>7</td>
     <td>Initial state of kegListReducer matches rootReducer</td>
-    <td>store.getState().masterKegList</td>
-    <td>kegListReducer(undefined, { type: null })</td>
+    <td>expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, { type: null }))</td>
+    <td>True</td>
   </tr>
   <tr>
     <td>8</td>
     <td>Initial state of formVisibleReducer matches rootReducer</td>
-    <td>store.getState().formVisibleOnPage</td>
-    <td>formVisibleReducer(undefined, { type: null })</td>
+    <td>expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }))</td>
+    <td>True</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>ADD_KEG action works for kegListReducer and rootReducer</td>
+    <td>expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action))</td>
+    <td>True</td>
   </tr>
 </table>
 
