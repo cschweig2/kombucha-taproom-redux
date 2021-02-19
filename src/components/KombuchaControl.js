@@ -82,9 +82,6 @@ class KombuchaControl extends React.Component {
       id: id
     }
     dispatch(action);
-    this.setState({
-
-    });
   }
 
   handleClick = () => {
