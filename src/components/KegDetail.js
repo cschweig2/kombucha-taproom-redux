@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 
 function KegDetail(props) {
   const { keg, onClickingDelete, onClickingEdit } = props;
+  let newPintsLeft = keg.pintsLeft;
+  if (parseInt(newPintsLeft) === 0) {
+    newPintsLeft = "Sold Out";
+  }
 
   function handleBuyPintButton(keg, num) {
     num = parseInt(num);
@@ -21,7 +25,7 @@ function KegDetail(props) {
       <h2>{keg.brand} - {keg.name}</h2>
       <h3>flavor profile: {keg.flavor}</h3>
       <h4>price: {keg.price}</h4>
-      <h4>pints left: {keg.pintsLeft}</h4>
+      <h4>pints left: {newPintsLeft}</h4>
       <button onClick={ () => onClickingDelete(keg.id) }>Delete Keg</button>
       <button onClick={ () => onClickingEdit(keg.id)}>Edit Keg</button>
       <button onClick={ () => handleBuyPintButton(keg, 1)}>Buy Pint</button>
