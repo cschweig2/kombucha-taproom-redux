@@ -62,6 +62,12 @@ None.
     <td>kegListReducer({}, { type: 'ADD_KEG' })</td>
     <td>{"keg object containing all required properties"}</td>
   </tr>
+  <tr>
+    <td>5</td>
+    <td>kegListReducer should successfully delete keg data from masterKegList</td>
+    <td>kegListReducer({}, { type: 'DELETE_KEG' })</td>
+    <td>Chosen keg will be removed, leaving all remaining kegs in masterKegList</td>
+  </tr>
 </table>
 
 </details>
