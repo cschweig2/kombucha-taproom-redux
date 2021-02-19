@@ -26,6 +26,30 @@ React
 
 None.
 
+### **Test Specs**
+
+<details>
+<summary>Expand to show specs</summary>
+
+<table>
+  <tr>
+    <th>Test #</th>
+    <th>Expected Behavior</th>
+    <th>Input</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>formVisibleReducer should return default state if no action type is recognized</td>
+    <td>formVisibleReducer(false, { type: null })</td>
+    <td>(false)</td>
+  </tr>
+</table>
+
+</details>
+
+<br>
+
 ## 💻 View Locally/Project Setup
 
 ### **Code Editor**
