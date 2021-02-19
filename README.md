@@ -50,6 +50,12 @@ None.
     <td>formVisibleReducer(false, { type: 'TOGGLE_FORM' })</td>
     <td>true</td>
   </tr>
+  <tr>
+    <td>3</td>
+    <td>kegListReducer should return default state if no action type is recognized</td>
+    <td>kegListReducer({}, { type: 'null' })</td>
+    <td>{}</td>
+  </tr>
 </table>
 
 </details>
