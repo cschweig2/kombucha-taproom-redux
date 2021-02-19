@@ -98,6 +98,12 @@ None.
     <td>expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action))</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>11</td>
+    <td>Action creator 'deleteKeg' should create DELETE_KEG action</td>
+    <td>actions.deleteKeg(1)</td>
+    <td>type: 'DELETE_KEG', id: 1</td>
+  </tr>
 </table>
 
 </details>
