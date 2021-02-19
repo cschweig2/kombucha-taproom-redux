@@ -22,4 +22,19 @@ describe('rootReducer', () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   })
 
+  test('Check that ADD_KEG action works for kegListReducer and rootReducer', () => {
+    const action = {
+      type: 'ADD_KEG',
+      name: 'Flower Power',
+      brand: 'Dr. Spice',
+      flavor: 'Chamomile and Hibiscus',
+      price: 90,
+      pintsLeft: 124,
+      id: 1
+  }
+  store.dispatch(action);
+  expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action));
+
+  });
+
 });
