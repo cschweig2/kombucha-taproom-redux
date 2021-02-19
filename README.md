@@ -34,14 +34,14 @@ To open the project on your local machine, you will need to download and install
 
 ### **Clone**
 1. Follow above steps to install necessary software.
-2. Open web browser and go to https://github.com/cschweig2/Pierre.Solution.
+2. Open web browser and go to https://github.com/cschweig2/kombucha-taproom-redux.
 3. After clicking the green "code" button, you can copy the URL for the repository.
 4. Open a terminal window, such as Command Prompt or Git Bash, and navigate to the folder you wish to keep this project in.<br>
-  4a. Type in this command: `git clone` , followed by the URL you just copied. The full command should look like this: `git clone https://github.com/cschweig2/Pierre.Solution` .
+  4a. Type in this command: `git clone` , followed by the URL you just copied. The full command should look like this: `git clone https://github.com/cschweig2/kombucha-taproom-redux` .
 5. View the code on your favorite text editor.
 
 ### **Download**
-1. Click [here](https://github.com/cschweig2/Pierre.Solution) to view project repository.
+1. Click [here](https://github.com/cschweig2/kombucha-taproom-redux) to view project repository.
 2. Click "Clone or download" to find the "Download ZIP" option.
 3. Click "Download ZIP" and extract files.
 4. Open the project in a text editor by clicking on any file in the project folder.
