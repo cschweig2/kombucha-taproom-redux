@@ -74,6 +74,12 @@ None.
     <td>rootReducer({}, { type: null })</td>
     <td>masterKegList: {}, formVisibleOnPage: false</td>
   </tr>
+  <tr>
+    <td>7</td>
+    <td>Initial state of kegListReducer matches rootReducer</td>
+    <td>store.getState().masterKegList</td>
+    <td>kegListReducer(undefined, { type: null })</td>
+  </tr>
 </table>
 
 </details>
