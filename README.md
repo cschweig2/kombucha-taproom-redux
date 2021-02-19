@@ -68,6 +68,12 @@ None.
     <td>kegListReducer({}, { type: 'DELETE_KEG' })</td>
     <td>Chosen keg will be removed, leaving all remaining kegs in masterKegList</td>
   </tr>
+  <tr>
+    <td>6</td>
+    <td>rootReducer should return default state if no action type is recognized</td>
+    <td>rootReducer({}, { type: null })</td>
+    <td>masterKegList: {}, formVisibleOnPage: false</td>
+  </tr>
 </table>
 
 </details>
