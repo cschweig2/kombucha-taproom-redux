@@ -56,6 +56,12 @@ None.
     <td>kegListReducer({}, { type: 'null' })</td>
     <td>{}</td>
   </tr>
+  <tr>
+    <td>4</td>
+    <td>kegListReducer should successfully add new keg data to masterKegList</td>
+    <td>kegListReducer({}, { type: 'ADD_KEG' })</td>
+    <td>{"keg object containing all required properties"}</td>
+  </tr>
 </table>
 
 </details>
