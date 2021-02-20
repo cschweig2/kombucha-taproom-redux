@@ -116,6 +116,11 @@ None.
     <td>actions.addKeg()</td>
     <td>type: 'ADD_KEG'</td>
   </tr>
+  <tr>
+    <td>14</td>
+    <td>selectedKegReducer should return default state if no action type is recognized</td>
+    <td>selectedKegReducer({}, { type: 'null' })</td>
+    <td>{}</td>
 </table>
 
 </details>
