@@ -110,6 +110,12 @@ None.
     <td>actions.toggleForm()</td>
     <td>type: 'TOGGLE_FORM'</td>
   </tr>
+  <tr>
+    <td>13</td>
+    <td>Action creator addKeg should create ADD_KEG action</td>
+    <td>actions.addKeg()</td>
+    <td>type: 'ADD_KEG'</td>
+  </tr>
 </table>
 
 </details>
