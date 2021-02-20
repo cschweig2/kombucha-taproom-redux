@@ -15,8 +15,14 @@ describe('kombucha taproom actions', () => {
   });
 
   it('addKeg should create ADD_KEG action', () => {
-    expect(actions.addKeg()).toEqual({
-      type: 'ADD_KEG'
+    expect(actions.addKeg({name: 'Flower Power', brand: 'Dr. Spice', flavor: 'Chamomile and Hibiscus', price: 90, pintsLeft: 124, id: 1})).toEqual({
+      type: 'ADD_KEG',
+      name: 'Flower Power',
+      brand: 'Dr. Spice',
+      flavor: 'Chamomile and Hibiscus',
+      price: 90,
+      pintsLeft: 124,
+      id: 1
     });
   });
 
