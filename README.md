@@ -104,6 +104,12 @@ None.
     <td>actions.deleteKeg(1)</td>
     <td>type: 'DELETE_KEG', id: 1</td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td>Action creator toggleForm should create TOGGLE_FORM action</td>
+    <td>actions.toggleForm()</td>
+    <td>type: 'TOGGLE_FORM'</td>
+  </tr>
 </table>
 
 </details>
