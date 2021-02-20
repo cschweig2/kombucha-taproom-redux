@@ -5,6 +5,7 @@ import AddKegForm from './AddKegForm';
 import EditKegForm from './EditKegForm';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import * as a from './../actions';
 
 class KombuchaControl extends React.Component {
 
@@ -19,33 +20,15 @@ class KombuchaControl extends React.Component {
 
   handleAddingKeg = (newKeg) => {
     const { dispatch } = this.props;
-    const { name, brand, flavor, price, id } = newKeg;
-    const action = {
-      type: 'ADD_KEG',
-      name: name,
-      brand: brand,
-      flavor: flavor,
-      price: price,
-      id: id
-    }
+    const action = a.addKeg(newKeg);
     dispatch(action);
-    const action2 = {
-      type: 'TOGGLE_FORM'
-    }
+    const action2 = a.toggleForm();
     dispatch(action2);
   }
 
   handleEditingKeg = (kegToEdit) => {
     const { dispatch } = this.props;
-    const { name, brand, flavor, price, id } = kegToEdit;
-    const action = {
-      type: 'ADD_KEG',
-      name: name,
-      brand: brand,
-      flavor: flavor,
-      price: price,
-      id: id
-    }
+    const action = a.addKeg(kegToEdit);
     dispatch(action);
     this.setState({
       editing: false,
@@ -60,10 +43,7 @@ class KombuchaControl extends React.Component {
 
   handleKegDelete = (id) => {
     const { dispatch } = this.props;
-    const action = {
-      type: 'DELETE_KEG',
-      id: id
-    }
+    const action = a.deleteKeg(id);
     dispatch(action);
     this.setState({ selectedKeg: null });
   }
@@ -71,16 +51,7 @@ class KombuchaControl extends React.Component {
 
   handleBuyPint = (kegToBuyFrom) => {
     const { dispatch } = this.props;
-    const { name, brand, flavor, price, id, pintsLeft } = kegToBuyFrom;
-    const action = {
-      type: 'ADD_KEG',
-      pintsLeft: pintsLeft,
-      name: name,
-      brand: brand,
-      flavor: flavor,
-      price: price,
-      id: id
-    }
+    const action = a.addKeg(kegToBuyFrom);
     dispatch(action);
   }
 
@@ -92,9 +63,7 @@ class KombuchaControl extends React.Component {
       });
     } else {
       const { dispatch } = this.props;
-      const action = {
-        type: 'TOGGLE_FORM'
-      }
+      const action = a.toggleForm();
       dispatch(action);
     }
   }
