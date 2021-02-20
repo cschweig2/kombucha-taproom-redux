@@ -3,6 +3,6 @@ export default (state = false, action) => {
     case 'TOGGLE_SELECTED':
       return !state;
     default:
-      return !state;
+      return state;
   }
 };
