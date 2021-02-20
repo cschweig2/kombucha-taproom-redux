@@ -13,4 +13,11 @@ describe('kombucha taproom actions', () => {
       type: 'TOGGLE_FORM'
     });
   });
+
+  it('addKeg should create ADD_KEG action', () => {
+    expect(actions.addKeg()).toEqual({
+      type: 'ADD_KEG'
+    });
+  });
+
 });
