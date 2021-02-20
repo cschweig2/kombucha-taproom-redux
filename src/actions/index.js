@@ -20,6 +20,6 @@ export const addKeg = (keg) => {
   }
 };
 
-export const toggleSelected = () => ({
-  type: 'TOGGLE_SELECTED'
+export const toggleEdit = () => ({
+  type: 'TOGGLE_EDIT'
 });
