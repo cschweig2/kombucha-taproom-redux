@@ -19,3 +19,7 @@ export const addKeg = (keg) => {
     id: id
   }
 };
+
+export const toggleSelected = () => ({
+  type: 'TOGGLE_SELECTED'
+});
