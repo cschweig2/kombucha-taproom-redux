@@ -7,4 +7,8 @@ describe('selectedKegReducer', () => {
     expect(selectedKegReducer(false, { type: null })).toEqual(false);
   });
 
+  test('Should toggle form visibility state to true', () => {
+    expect(selectedKegReducer(false, { type: c.TOGGLE_SELECTED })).toEqual(true);
+  });
+
 });
