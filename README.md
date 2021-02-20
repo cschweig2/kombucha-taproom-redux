@@ -118,14 +118,14 @@ None.
   </tr>
   <tr>
     <td>14</td>
-    <td>selectedKegReducer should return default state if no action type is recognized</td>
-    <td>selectedKegReducer({}, { type: 'null' })</td>
-    <td>{}</td>
+    <td>toggleEditReducer should return default state if no action type is recognized</td>
+    <td>toggleEditReducer(false, { type: 'null' })</td>
+    <td>false</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>selectedKegReducer should toggle form visibility state to true</td>
-    <td>selectedKegReducer(false, { type: 'SELECTED_KEG' })</td>
+    <td>toggleEditReducer should toggle form visibility state to true</td>
+    <td>toggleEditReducer(false, { type: 'TOGGLE_EDIT' })</td>
     <td>True</td>
   </tr>
 </table>
