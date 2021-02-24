@@ -20,7 +20,8 @@ VS Code \
 HTML \
 CSS \
 JavaScript \
-React
+React \
+Redux
 
 ### **Known Bugs**
 
@@ -221,8 +222,8 @@ If you run into any issues, you can contact the creator at chelraebecker@gmail.c
   </tr>
 </table>
 
-## 🧐 Legal
+##  Legal
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2020 **Chelsea Becker**
+Copyright (c) 2021 **Chelsea Becker**
