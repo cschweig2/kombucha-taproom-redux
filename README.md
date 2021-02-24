@@ -129,6 +129,12 @@ None.
     <td>toggleEditReducer(false, { type: 'TOGGLE_EDIT' })</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>16</td>
+    <td>TOGGLE_EDIT action works for editReducer and rootReducer</td>
+    <td>expect(store.getState().editing).toEqual(editReducer(undefined, action))</td>
+    <td>True</td>
+  </tr>
 </table>
 
 
