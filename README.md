@@ -135,6 +135,12 @@ None.
     <td>expect(store.getState().editing).toEqual(editReducer(undefined, action))</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>17</td>
+    <td>Action creator toggleEdit should create TOGGLE_EDIT action</td>
+    <td>actions.toggleEdit()</td>
+    <td>type: 'TOGGLE_EDIT'</td>
+  </tr>
 </table>
 
 
